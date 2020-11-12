@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+
+{% extends "basic_app/base.html" %}
+{% load my_extras%}
+{%block body_block %}
+
+<h1>WELCOME TO INDEX PAGE</h1>
+<h2>{{text|cut:'to' }}</h2>
+
+<h2>{{date|add:'11'}}</h2>
+{% endblock %}
